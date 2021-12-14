@@ -1,0 +1,176 @@
+/*Start Media Query*/
+ 
+ /*start smartphone & tablet (xs)*/
+ @media (max-width:768px)
+ {
+ 
+.about,
+.specialties-content,
+.our-menu .products,
+.our-event-info {
+  border-radius: 0 !important;
+  margin: 0 !important;
+}
+
+ h1:after{
+ font-size: 50px;
+ }
+
+  /*start navbar*/
+ .navbar-default{
+ box-shadow:  3px -7px 12px -1px rgba(0,0,0,0.67);
+  } 
+  
+  
+.navbar-default .navbar-toggle{
+    border: none;
+}
+
+.navbar-default .navbar-toggle:focus{
+ background: transparent
+}
+
+.navbar-default .navbar-toggle:hover{
+ border:none;
+ background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+ background-color: #FFF;
+}
+
+
+  /*end navbar*/
+  
+  /*start about us*/
+  
+ .about{padding: 50px 0 ;z-index: 999}
+
+.about .about-info h1{
+ margin-bottom: 30px
+}
+
+
+
+.about .about-info h3{margin-bottom: 30px}
+  /*end about us*/
+  
+ /*start our-specialties*/
+ .our-specialties{margin-top: -10px}
+
+.our-specialties .our-specialties-cover{height: 300px}
+
+.our-specialties .specialties-content{margin-top: 10px}
+
+.our-specialties .our-specialties-cover h1{top: 50%}
+
+.our-specialties .specialties-content .special-dish-info{padding: 10px}
+/*end our-specialties*/  
+  
+/*start menu section*/
+  .our-menu{ margin-top: -10px}
+ 
+ .our-menu .our-menu-cover{  height: 300px}
+
+.our-menu .products{margin-top: 10px}
+/*end menu section*/
+  
+/*start booking section*/
+.booking-table{  margin-top: -10px}
+
+.booking-table .booking{height: 300px}
+
+.booking-table .booking-fields{margin-top: 10px}
+
+.booking-table .booking h1{
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%,-50%);
+ color: #FFF;
+}
+/*end of booking section*/
+  
+/*start our event section*/
+.our-events{
+ margin-top: -10px;
+position: relative;
+z-index: 1
+}
+
+.our-events .our-events-cover{height: 300px}
+ 
+ .our-events .our-events-cover h1{
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%,-50%);
+ color: #FFF;}
+ 
+ .our-events .our-event-info{ margin-top: 10px;}
+ 
+ .our-events .our-event-info .an-event{margin-bottom:20px;}
+ 
+ .our-events .our-event-info .an-event:nth-child(1){z-index: 3}
+.our-events .our-event-info .an-event:nth-child(3),
+.our-events .our-event-info .an-event:nth-child(2){z-index: 1}
+
+.our-events .our-event-info .an-event:hover{
+ z-index: 1;
+ transform: scale(1)}
+  
+  /*start fo footer*/
+  footer{margin-top: 50px;}
+  /*end fo footer*/
+  
+  /*start contact section*/
+  .contact{margin-top: 50px}
+  /*end of contact section*/
+ }
+ /*end smartphone & tablet (xs)*/
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /*Small screen (sm)*/
+ @media (min-width:768px) and (max-width:991px)
+ {
+ .navbar-right{
+  display: flex;
+  justify-content: space-around}
+  
+  .navbar-default .navbar-nav > li > a:not(.navbar-brand){padding: 15px 5px}
+  
+  
+ }/*sm*/
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /*medium screen (md)*/
+ @media (min-width:991px) and (max-width:1199px)
+ {}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /*large screen (lg)*/
+ @media (min-width:1200px)
+ {}
+ 
+ 
+ 
+ /*End Media Query*/

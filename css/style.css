@@ -1,0 +1,640 @@
+/*start global & my framwork*/
+*{
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ -o-box-sizing: border-box;
+ box-sizing: border-box;  
+ }
+ 
+ body{
+  font-family: 'Josefin Sans', sans-serif;
+  overflow: hidden !important
+  }
+  
+  img{
+   object-fit: cover
+  }
+  
+.overlay{
+ background-color: rgba(0, 0, 0, 0.5);
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ z-index: 6
+}
+
+h1{
+ font-size: 50px;
+  font-weight: 700;
+  text-transform:uppercase;
+  position:relative;
+  font-family:"Open Sans", Arial, sans-serif;
+  font-style: normal;
+  line-height:40px;
+  text-align: center;
+  color: #000;
+  z-index: 2
+ }
+ 
+ h1:after{
+ color:#ffa33e;
+ position: absolute;
+ left: 50%;
+ top:-20%;
+ transform: translate(-50%,-50%);
+ font-size: 80px;
+ font-weight: 500;
+ font-family: 'Pinyon Script', cursive;
+ font-style: normal;
+ text-transform: capitalize;
+ z-index:3;
+ }
+ 
+ p{
+  color: #8b8e94;
+   font-style:normal;
+   font-weight:400;
+   font-size:15px;
+   line-height: 24px;
+   text-align: center}
+/*ُEnd global & my framwork*/
+
+/*start scroll-to-top button*/
+ .scroll-to-top{
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  background-color:#ffa33e;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.5);
+  cursor: pointer;
+  display: none;
+  z-index: 9999}
+ 
+ .scroll-to-top i{padding: 5px}
+/*End scroll-to-top button*/
+
+
+/*Start nav bar section*/
+.navbar-default{
+ background-color: transparent;
+ border: none;
+ text-transform: capitalize;
+ padding: 20px 0;
+ z-index: 99999
+}
+
+.navbar-default .navbar-brand{
+color: #FFF;
+font-size: 50px;
+font-weight: 900 !important;
+ font-family: 'Pinyon Script', cursive;
+}
+
+.navbar-default .navbar-brand:hover{color: #fff}
+
+
+.navbar-default .navbar-nav > li > a:not(.navbar-brand){
+ color: #FFF;
+ font-size: 20px;
+ font-weight: 200
+}
+
+.navbar-default .navbar-nav > li > a:not(.navbar-brand):hover{color:#ffa33e;}
+
+.navbar-default .navbar-nav > li > a:not(.navbar-brand).active{
+ color: #ffa33e;
+ font-weight: 900
+ }
+ 
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+  border-color:transparent;
+  overflow-x: hidden
+}
+
+/*End nav bar section*/
+
+
+/*start header section*/
+.header{
+ position: relative;
+ background-size: cover;
+ background: url(../images/hero_bg_1.jpg) no-repeat center;
+ height: 100vh;
+}
+.header .overlay{
+  display: grid;
+  align-items: center;
+  align-content: center;
+}
+.header .overlay .h-logo {
+  font-size: 50px;
+  color: #fff;
+ }
+ 
+ .header h1:after{
+ content: "welcome";
+ }
+/*end of header section*/
+
+/*start about section*/
+.about{
+ position:relative;
+ background: #FFF;
+ box-shadow:  3px -7px 12px -1px rgba(0,0,0,0.67);
+ padding: 100px 0;
+ border-radius:20px;
+ margin-top: 10px;
+ overflow: hidden;
+ z-index: 999
+}
+
+.about .about-info {
+ text-align: center;
+ margin: 0 auto
+}
+
+.about .about-info h1{
+ text-transform: uppercase;
+ font-weight: 900;
+ margin-bottom: 70px;
+}
+
+.about .about-info h1:after{
+ content: "discover";
+}
+
+.about .about-info .stars{
+ color: #8b8e94;
+ font-size: 30px;
+ text-align: center;
+ margin-bottom: 30px;
+}
+
+.about .about-info p{
+   color: #8b8e94;
+   font-style:normal;
+   font-weight:400;
+   font-size:15px;
+   line-height: 24px;
+   text-align: center}
+
+.about .about-info h3:after{
+   content: "";
+   position: absolute;
+   bottom:0;
+   left: 50%;
+   height:2px;
+   width: 10%;
+   background-color:#000;
+   transform: translateX(-50%)
+}
+
+.about .about-img img{
+ width: 100%;
+ border: 10px solid #FFF;
+ box-shadow:  3px -7px 12px -1px rgba(0,0,0,0.6);
+}
+/*end about section*/
+
+
+/*start our-specialties*/
+.our-specialties{
+ margin-top: -50px ;
+ background-color: #fff
+}
+
+.our-specialties .our-specialties-cover{
+ background: url(../images/hero_bg_2.jpg) fixed center no-repeat;
+ background-size: cover;
+ width: 100%;
+ height: 100vh;
+ position: relative;
+}
+
+.our-specialties .our-specialties-cover h1{
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%,-50%);
+ color: #FFF;
+}
+
+.our-specialties .our-specialties-cover h1:after{
+ content: "discover";
+ }
+
+.our-specialties .specialties-content{
+ position:relative;
+ background: #FFF;
+ box-shadow:  3px -7px 12px -1px rgba(0,0,0,0.67);
+ padding: 0px;
+ border-radius:20px;
+ margin-top: -100px;
+ overflow: hidden;
+ z-index: 999
+}
+
+.our-specialties .specialties-content .col-md-3{
+ padding: 0;
+ margin: 0;
+}
+
+.our-specialties .specialties-content img{
+ width: 100%;
+ height: 250px;
+ padding: 0;
+ margin: 0
+}
+
+.our-specialties .specialties-content .special-dish-info{
+ background-color: #FFF;
+ height: 250px;;
+ margin: 0;
+ position: relative;
+ text-align: center;
+ padding: 25px !important
+}
+
+.our-specialties .specialties-content .special-dish-info p{color: #8b8e94;}
+
+.our-specialties .specialties-content .special-dish-info .special-dish-pice{
+ color: #FFA849;
+ font-size: 18px
+}
+
+.our-specialties .specialties-content .special-dish-info:not(.arr-from-left):before{
+ content: "";
+ background-color: #Fff;
+ height: 20px;
+ width: 20px;
+ position: absolute;
+ left: -10px;
+ top: 10%;
+ transform: rotate(45deg);
+}
+
+.our-specialties .specialties-content .arr-from-left:before{
+ content: "";
+ background-color: #Fff;
+ height: 20px;
+ width: 20px;
+ position: absolute;
+ right: -10px;
+ top: 10%;
+ transform: rotate(45deg);
+ z-index: 9999} 
+
+/*end our-specialties*/
+
+
+/*start our menu section*/
+.our-menu{
+  margin-top: -50px;
+}
+
+.our-menu .our-menu-cover{
+ background: url(../images/hero_bg_4.jpg) fixed center no-repeat;
+ background-size: cover;
+ width: 100%;
+ height: 100vh;
+ position: relative;
+}
+
+.our-menu h1{
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%,-50%);
+ color: #FFF;}
+ 
+ .our-menu h1:after{
+  content:"discover";
+ }
+
+.our-menu .products{
+ position:relative;
+ background: #FFF;
+ box-shadow:  3px -7px 12px -1px rgba(0,0,0,0.67);
+ padding: 25px;
+ border-radius:20px;
+ margin-top: -150px;
+ overflow: hidden;
+ z-index: 999
+}
+
+.our-menu .products ul li{
+ list-style: none;
+ display: block;
+ position: relative;
+ }
+
+.our-menu .products ul li .product-img{
+ width: 80px;
+}
+
+.our-menu .products ul li .product-img img{
+ width:100% ;
+ border-radius: 50%;
+ }
+
+.our-menu .products ul li .product-text h4{
+ margin-top: 15px;
+ text-transform: capitalize}
+ 
+.our-menu .products ul li .product-text p{
+ color: #8b8e94;
+ text-align: left
+}
+
+.our-menu .products ul li .product-text span{
+ color: #FFA849;
+ font-size: 18px
+}
+/*end our menu section*/
+
+
+/*start booking section*/
+.booking-table{
+ margin-top: -50px;
+ position: relative;
+ text-transform: capitalize;
+}
+
+.booking-table .booking{
+ background: url(../images/hero_bg_5.jpg) fixed center no-repeat;
+ background-size: cover;
+ width: 100%;
+ height: 100vh;
+ position: relative;
+}
+
+.booking-table .booking h1{
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%,-50%);
+ color: #FFF;
+}
+
+.booking-table .booking h1:after{
+  content:"booking";
+  
+}
+
+.booking-table .booking-fields{
+ position:relative;
+ background: #FFF;
+ box-shadow:  3px -7px 12px -1px rgba(0,0,0,0.67);
+ padding: 50px;
+ border-radius:20px;
+ margin-top: -150px;
+ z-index: 999
+}
+
+.booking-table .booking-fields .field{margin: 30px 0}
+
+.booking-table .booking-fields .field label{
+ display: block;
+ color: #888;
+}
+
+.booking-table .booking-fields .field select,
+.booking-table .booking-fields .field input{
+ width: 100%;
+ height: 50px;
+ padding: 10px;
+ color: #888;
+ border-color:#ddd;
+}
+
+.booking-table .booking-fields .field input{
+ border: 1px solid #DDD;
+}
+
+.booking-table .booking-fields .field select:focus,
+.booking-table .booking-fields .field input:focus{outline: none}
+
+.booking-table .booking-fields .field .fa-phone,
+.booking-table .booking-fields .field .fa-envelope,
+.booking-table .booking-fields .field .fa-user{
+ color: #888;
+ position: absolute;
+ right: 10%;
+ top: 65%;
+ transform: translateY(-50%)
+}
+
+.booking-table .booking-fields button{
+   background-color:#FFA849;
+   text-transform:uppercase;
+   color:#FFF;
+   border-radius: 20px;
+   font-size:14px;
+   font-weight: 400;
+   font-style: normal;
+   line-height:21px;
+   padding: 10px 20px;
+   margin: 0 auto;
+   display: block;
+   width:200px
+}
+/*start booking section*/
+
+
+/*start our event section*/
+.our-events{
+margin-top: -50px;
+position: relative;
+z-index: 1
+}
+
+.our-events .our-events-cover{
+ background: url(../images/hero_bg_4.jpg) fixed center no-repeat;
+ background-size: cover;
+ width: 100%;
+ height: 100vh;
+ position: relative;
+ z-index: 0
+}
+
+.our-events .our-events-cover h1{
+ position: absolute;
+ left: 50%;
+ top: 60%;
+ transform: translate(-50%,-60%);
+ color: #FFF;
+}
+
+.our-events .our-events-cover h1:after{content:"up coming"}
+
+.our-events .our-event-info{
+ margin-top: -100px;
+ z-index: 555}
+
+.our-events .our-event-info .an-event{
+ background-color: #fff;
+ box-shadow: 3px -7px 12px -1px rgba(0,0,0,0.67);
+ border-radius: 10px;
+ transition: all 0.3s ease-in-out
+}
+
+.our-events .our-event-info .an-event:nth-child(1),
+.our-events .our-event-info .an-event:nth-child(3){z-index: 2}
+
+.our-events .our-event-info .an-event:nth-child(2){z-index: 3}
+
+.our-events .our-event-info .an-event:hover{
+ z-index: 5;
+ transform: scale(1.05);
+ }
+
+.our-events .our-event-info .an-event img{
+ width:100%;
+ margin: 10px 0;
+ border-top-left-radius: 10px;
+ border-top-right-radius: 10px;
+ }
+ 
+ .our-events .our-event-info .an-event .event-det{
+  padding: 15px
+ }
+ 
+ .our-events .our-event-info .an-event .event-det p{
+   color: #8b8e94;
+   font-style:normal;
+   font-weight:400;
+   font-size:15px;
+   line-height: 24px;
+   text-align: left
+  }
+  
+  .our-events .our-event-info .an-event .event-det button{
+   background-color:transparent;
+   text-transform:uppercase;
+   border: none;
+   position: relative
+  }
+  
+  .our-events .our-event-info .an-event .event-det button:after{
+   content: "";
+   position: absolute;
+   bottom:0;
+   left: 10%;
+   height:2px;
+   width: 75%;
+   background-color:#000;
+   transition: all 0.5s linear
+  }
+  
+  .our-events .our-event-info .an-event .event-det button:hover:after{
+   background-color: #ffa849
+  }
+/*end our event section*/
+
+
+/*start contact section*/
+.contact{
+ padding-top: 100px;
+ }
+
+ .contact .contact-info{margin-top:50px}
+ 
+ .contact .contact-info h1{
+  font-size: 50px;
+  font-weight: 700;
+  text-transform:uppercase;
+  position:relative;
+  z-index: 9;
+  font-family:"Open Sans", Arial, sans-serif;
+  font-style: normal;
+  line-height:40px;
+  text-align: center;
+  color: #000
+ }
+ 
+ .contact .contact-info h1:after{content: "contact"}
+ 
+  .contact .contact-info p{
+   color: #8b8e94;
+   font-style:normal;
+   font-weight:400;
+   font-size:15px;
+   line-height: 24px;
+   margin-top: 50px;
+   text-align: center
+  }
+  
+  .contact .contact-field label{
+   color: #8b8e94;
+   font-size:15px;
+   line-height: 24px;
+   font-style:normal;
+   font-weight:400;
+   text-transform:capitalize
+  }
+  
+  .contact .contact-field input,
+  .contact .contact-field textarea{
+   display: block;
+   width: 100%;
+   margin-bottom:20px ;
+   padding: 10px;
+   border:1px solid #ddd;
+   border-radius: 5px
+  }
+  
+  .contact .contact-field textarea{height:200px}
+  
+  .contact .contact-field input:focus,
+  .contact .contact-field textarea:focus{outline:none}
+  
+  .contact .contact-field button{
+   background-color:#FFA849;
+   text-transform:uppercase;
+   color:#FFF;
+   border-radius: 20px;
+   font-size:14px;
+   font-weight: 400;
+   font-style: normal;
+   line-height:21px;
+   padding: 10px 20px;
+   margin: 0 auto;
+   display: block
+  }
+/*end contact section*/
+
+
+/*start footer section*/
+footer{
+ background-color:#000;
+ color: #808080;
+ padding: 60px 0 ;
+ margin-top: 150px ;
+}
+
+footer h3{
+ color: #FFF;
+ text-transform: uppercase
+}
+
+footer p{ text-align: left}
+
+footer .social-links{
+ margin-top: 50px
+}
+
+footer i{
+ color: #fff;
+ padding: 20px;
+ cursor: pointer
+ }
+ 
+ footer i:hover{color:#808080;}
+/*end footer section*/
